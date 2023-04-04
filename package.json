@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "date-fns": "^2.29.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
