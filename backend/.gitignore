@@ -1,0 +1,5 @@
+node_modules
+dbPword.txt
+.env.local
+.env.test
+.env.development

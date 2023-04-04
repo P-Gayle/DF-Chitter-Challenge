@@ -1,0 +1,219 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+    --primary: #1aac83;
+    --error: #e7195a;
+}
+
+body {
+    background-image: linear-gradient(rgb(23, 11, 21),rgb(60, 23, 37),rgb(23, 11, 21));
+    margin: 0;
+    font-family: "Poppins";
+    overflow-y: hidden;
+}
+
+.App {
+    position: relative;
+}
+
+.pages {
+    max-width: 1400px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+div.error {
+    padding: 10px;
+    background: #ffefef;
+    border: 1px solid var(--error);
+    color: var(--error);
+    border-radius: 4px;
+    margin: 20px 10px;
+}
+
+/*--------------------------------------------------------------*/
+/* Home page */
+/*--------------------------------------------------------------*/
+
+.home {
+
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 10px;
+
+}
+
+/*home page add peep button*/
+button.addPeep-button {
+    position: sticky;
+    bottom: 1em;
+    z-index: 3;
+    left: 85%;
+    width: 20%;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 2px 5px;
+    background-color: rgb(13, 209, 243);     
+}
+
+/*--------------------------------------------------------------*/
+/* Add peep page */
+/*--------------------------------------------------------------*/
+
+/*Add peep page input box*/
+.create input {
+    display: block;
+    padding: 10px;
+    margin: 20px auto;
+    width: 50%;
+    height: 150px;   
+    box-sizing: border-box;
+    background: rgba(251, 249, 249, 0.1);
+    border: 1px solid rgba(251, 249, 249, 0.3);
+    border-radius: 4px;
+    color: #fff;
+}
+
+.add-container {
+    height: calc(100vh - 209px);
+}
+
+.create h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.create button {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 2px 5px;
+    cursor: pointer;
+    background-color: rgb(13, 209, 243);
+}
+.create p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(13, 209, 243);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/*--------------------------------------------------------------*/
+/* Sign in and login pages */
+/*--------------------------------------------------------------*/
+
+form.signup,
+form.login {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-image: linear-gradient(180deg, rgb(39, 16, 28), rgba(251, 249, 249, 0.1));
+    border: 1px solid rgba(251, 249, 249, 0.3);
+    border-radius: 4px;
+}
+
+.signup input {
+    display: block;
+    padding: 10px;
+    margin: 15px auto;
+    width: 90%;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;   
+}
+
+.signup h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup label {
+    display: block;
+    margin-left: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 25px;
+}
+
+.signup button {
+    display: block;
+    margin: 0 auto;
+    margin-top:20px;
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 2px 5px;
+    cursor: pointer;
+    background-color: rgb(13, 209, 243);
+}
+
+.login input {
+    display: block;
+    padding: 10px;
+    margin: 20px auto;
+    width: 90%;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login button {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 2px 5px;
+    cursor: pointer;
+    background-color: rgb(13, 209, 243);
+}
+
+.login h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login label {
+    display: block;
+    margin-left: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 25px;
+}
+
+.login-container {
+    height: calc(100vh - 209px);   
+}
+
