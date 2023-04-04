@@ -35,7 +35,7 @@ These are the wireframes for the four of views of my chitter app:
 - Login
 - SignUp
 
-![ Component hierarchy ](./my-readme-images/component-hierarchy.svg)
+![ Component hierarchy ](./my-readme-images/component-hierarchy.png)
 
 ## SOME RESOURCES
 - date functions:  https://date-fns.org/v2.29.3/docs/format
