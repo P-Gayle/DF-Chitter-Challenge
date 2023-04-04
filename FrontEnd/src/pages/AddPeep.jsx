@@ -19,7 +19,7 @@ const AddPeep = () => {
 
         const newPeep = { message }
         
-        const response = await fetch('http://localhost:4000/api/peeps', {
+        const response = await fetch('https://chitter-e3j5.onrender.com/api/peeps', {
             method: 'POST', 
             body: JSON.stringify(newPeep),
             headers: {
