@@ -7,6 +7,7 @@ import { fetchPeeps } from '../utils/fetchPeeps';
 
 const Home = () => {
     const [peeps, setPeeps] = useState(null)
+    const [loading, setLoading] = useState(false);
     const {user} = useAuthContext()
 
     useEffect(() => {
@@ -15,7 +16,7 @@ const Home = () => {
         try {
             const fetchedPeeps = await fetchPeeps(); // Call the fetchPeeps function
             setPeeps(fetchedPeeps);
-            
+            setLoading(false);
             } catch (error) {
             console.error(error);         
             }
@@ -23,6 +24,10 @@ const Home = () => {
 
         fetchPeepsAndSetState();
     }, [])
+
+    if (loading) {
+    return <p>Hang tight! Peeps are loading...</p>;
+  }
 
     return (
         <div className="home">

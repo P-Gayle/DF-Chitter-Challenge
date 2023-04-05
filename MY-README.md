@@ -1,6 +1,8 @@
 ## INSTRUCTIONS
 - I have used Vite so to run the frontend, use `npm run dev` 
 - `npm test` as usual to run the tests for frontend
+- Deployed link: `https://paulas-chitter-app.netlify.app/`
+
 
 ## WIREFRAMES
 
