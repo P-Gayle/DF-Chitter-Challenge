@@ -5,7 +5,7 @@ const requireAuth = require('../middleware/requireAuth')
 const router = express.Router()
 
 //to get all peeps
-router.get('/api/peeps', getAllPeeps)
+router.get('/', getAllPeeps)
 
 //auth only applies to createPeep.
 router.use(requireAuth)
