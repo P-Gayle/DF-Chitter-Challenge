@@ -23,11 +23,11 @@ const Sidebar = () => {
                     {!user && (
                     <div className='nav-container'>
                             <div className='signup'>
-                            <i class="fa-solid fa-user-plus"></i>
+                            <i className="fa-solid fa-user-plus"></i>
                             <Link to="/signup">Sign Up</Link>
                         </div>
                             <div className='login'>
-                            <i class="fa-solid fa-right-to-bracket"></i>
+                            <i className="fa-solid fa-right-to-bracket"></i>
                             <Link to="/login">Login</Link>  
                         </div>
                     </div>

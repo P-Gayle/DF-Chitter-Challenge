@@ -15,13 +15,19 @@
     margin-left: 5px;
     Grid-row: 9; 
     margin-left: 0;
-    font-size: 1.2rem;
-   
+    font-size: 1.2rem;  
 }
+
+
 
 .nav-container a {
     text-decoration: none;
     color:rgb(13, 209, 243);
+}
+
+.nav-container-footer a {
+    text-decoration: none;
+    color: rgb(13, 209, 243);
 }
 
 .login {
@@ -59,8 +65,21 @@
  }
 
  @media screen and (max-width: 860px) {
-     .sidebar {
-            display: none;
+    .sidebar {
+        display: none;
      }
+    .signup {  
+       
+        margin-left: 0;
+        font-size: 1rem;
+    }
+    .login {
+        margin-top: 2px;
+        font-size: 1rem;
+    }
+    .logout {
+        margin-top: 0px;
+        font-size: 1rem;
+    }
     
  }
