@@ -2,7 +2,7 @@ import '../Sidebar/sidebar.css'
 import { Link } from 'react-router-dom'
 import { useLogout } from '../../hooks/useLogout'
 
-//to show the user's email when logged in(move to header??)
+//to show the user's email when logged in
 import { useAuthContext } from '../../hooks/useAuthContext'
 
 const Sidebar = () => {

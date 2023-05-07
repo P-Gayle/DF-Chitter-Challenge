@@ -57,3 +57,10 @@
 .logout-email {
     color: #fff;
  }
+
+ @media screen and (max-width: 860px) {
+     .sidebar {
+            display: none;
+     }
+    
+ }

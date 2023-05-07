@@ -11,7 +11,7 @@
 
 .whatsHappening h3 {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -21,3 +21,28 @@
     color: #fff;
     margin-bottom: 30px;
 }
+
+@media screen and (max-width: 1150px) {
+    .whatsHappening {
+        width: 85%;
+        margin-left: 0px;
+        margin-top: 0px;
+        height: 71vh;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .newsCard{
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .whatsHappening {
+        display: none;
+    }
+}
+
+

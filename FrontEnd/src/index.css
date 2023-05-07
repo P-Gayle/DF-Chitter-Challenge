@@ -45,6 +45,15 @@ div.error {
 
 }
 
+@media screen and (max-width: 415px) {
+    .home {
+        display: grid;
+        grid-template-columns: 1fr;  
+    }
+    
+}
+
+
 /*home page add peep button*/
 button.addPeep-button {
     position: sticky;
