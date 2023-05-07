@@ -2,7 +2,7 @@
     background: rgba(251, 249, 249, 0.1);
     border:1px solid rgba(251, 249, 249, 0.3);
     border-radius: 4px;
-    margin: 25px 70px;;
+    margin: 25px 2.2rem;
     padding: 20px;
     position: relative;
 }
@@ -18,7 +18,24 @@
     overflow: auto;
     position: relative;
     border-radius: 10px;
-    margin-left: 70px;
+    margin-left: 1.5rem;
     width: 85%;
     padding-right: 20px;  
 }
+
+@media screen and (max-width: 860px) {
+    .peeps {
+        width: 85%;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .peep-details {
+    margin: 25px 0.5rem;
+       
+    }
+}
+    
+
+

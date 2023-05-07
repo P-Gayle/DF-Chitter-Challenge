@@ -27,7 +27,7 @@ const Home = () => {
 
     if (loading) {
     return <p>Hang tight! Peeps are loading...</p>;
-  }
+    }
 
     return (
         <div className="home">
