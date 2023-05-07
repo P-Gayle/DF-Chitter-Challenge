@@ -231,6 +231,19 @@ form.login {
 button.addPeep-button {
         font-size: 0.9rem;  
     }
+
+    .login button {
+        font-size: 0.9rem;
+    }
+
+    .login label {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .signup button {
+        font-size: 0.9rem;
+    }
 }
 
     
