@@ -55,9 +55,5 @@ These are the wireframes for the four of views of my chitter app:
 - I had to import vi from Vitest in every test file for the tests to work.
 - I tried to do more testing of the async/await functions as per news challenge feedback
 - As the real Twitter has a what's happening (trending) section I decided to re use the Guardian API to mimic this
-- The UI is not currently responsive but this is something I will fix in the near future.
+
   
-### Backend
-- I was unable to successfully test the backend and ran out of time to figure it out!. I believe it has something to do with the mock data or the test database. I have left a few of the tests in although they are failing.
-- I successfully managed to use postman to check requests:
-  ![ Postman ](./my-readme-images/postman2.png)
