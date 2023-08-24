@@ -1,4 +1,7 @@
 // require('dotenv').config()
+const axios = require('axios');
+const cron = require('node-cron');
+
 const dotenv = require('dotenv');
 const cors = require('cors');
 const express = require('express')
@@ -35,12 +38,28 @@ const dbConnection = async () => {
     }
 }
 
+
 //routes
 app.use('/api/peeps', peepRoutes)
 app.use('/api/user', userRoutes)
 
 // Call the function to connect to the database
 dbConnection();
+
+// Function to ping the server ----------------
+function pingServer() {
+    axios.get('https://chitter-e3j5.onrender.com/api/peeps')
+        .then(response => {
+            console.log('Successfully pinged server!');
+        })
+        .catch(error => {
+            console.error('Error pinging server:', error);
+        });
+}
+
+// Schedule the ping task for every 14 minutes
+cron.schedule('*/14 * * * *', pingServer);
+//---------------------------------------------
 
 const server = app.listen(port, () => {
     const SERVERHOST = server.address().address;
