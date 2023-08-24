@@ -11,3 +11,16 @@ footer {
     margin: 0 10px;
     color: #fff;
 }
+
+@media screen and (min-width: 861px) {
+    .auth-footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .footer p {
+        display: none;
+    }
+}
+    

@@ -2,7 +2,7 @@ import '../Sidebar/sidebar.css'
 import { Link } from 'react-router-dom'
 import { useLogout } from '../../hooks/useLogout'
 
-//to show the user's email when logged in(move to header??)
+//to show the user's email when logged in
 import { useAuthContext } from '../../hooks/useAuthContext'
 
 const Sidebar = () => {
@@ -23,11 +23,11 @@ const Sidebar = () => {
                     {!user && (
                     <div className='nav-container'>
                             <div className='signup'>
-                            <i class="fa-solid fa-user-plus"></i>
+                            <i className="fa-solid fa-user-plus"></i>
                             <Link to="/signup">Sign Up</Link>
                         </div>
                             <div className='login'>
-                            <i class="fa-solid fa-right-to-bracket"></i>
+                            <i className="fa-solid fa-right-to-bracket"></i>
                             <Link to="/login">Login</Link>  
                         </div>
                     </div>

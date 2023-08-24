@@ -41,9 +41,18 @@ div.error {
 
     display: grid;
     grid-template-columns: 8fr 4fr;
-    gap: 10px;
+    gap: 0px;
 
 }
+
+@media screen and (max-width: 415px) {
+    .home {
+        display: grid;
+        grid-template-columns: 1fr;  
+    }
+    
+}
+
 
 /*home page add peep button*/
 button.addPeep-button {
@@ -216,4 +225,27 @@ form.login {
 .login-container {
     height: calc(100vh - 209px);   
 }
+
+@media screen and (max-width: 600px) {
+
+button.addPeep-button {
+        font-size: 0.9rem;  
+    }
+
+    .login button {
+        font-size: 0.9rem;
+    }
+
+    .login label {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .signup button {
+        font-size: 0.9rem;
+    }
+}
+
+    
+
 
