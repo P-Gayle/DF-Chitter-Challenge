@@ -52,7 +52,8 @@ dbConnection();
 
 //25 minute pings to keep the render server alive
 function keepServerAwake() {
-    axios.get("https://chitter-e3j5.onrender.com/api/health-check")
+    // axios.get("https://chitter-e3j5.onrender.com/api/health-check")
+        axios.get("https://paulas-chitter-app.netlify.app/")
         .then(response => {
             console.log('Successfully pinged server!');
         })
