@@ -27,7 +27,7 @@ const Home = () => {
     }, [])
 
     if (loading) {
-        return <p>Hang tight! Peeps are loading. May take up to 30 seconds...</p>;
+        return <p style={{ color: 'rgb(13, 209, 243)' }}>Hang tight! Peeps are loading. May take up to 30 seconds...</p>;
     }
 
     return (
