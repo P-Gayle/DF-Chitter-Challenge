@@ -7,18 +7,19 @@ import { fetchPeeps } from '../utils/fetchPeeps';
 
 const Home = () => {
     const [peeps, setPeeps] = useState(null)
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const {user} = useAuthContext()
 
     useEffect(() => {
   
         const fetchPeepsAndSetState = async () => {
-        try {
-            const fetchedPeeps = await fetchPeeps(); // Call the fetchPeeps function
-            setPeeps(fetchedPeeps);
-            setLoading(false);
+            try {
+                const fetchedPeeps = await fetchPeeps(); // Call the fetchPeeps function
+                setPeeps(fetchedPeeps);
             } catch (error) {
-            console.error(error);         
+                console.error(error);         
+            } finally {
+                setLoading(false);
             }
         }   
 
@@ -26,7 +27,7 @@ const Home = () => {
     }, [])
 
     if (loading) {
-    return <p>Hang tight! Peeps are loading...</p>;
+        return <p>Hang tight! Peeps are loading. May take up to 30 seconds...</p>;
     }
 
     return (
